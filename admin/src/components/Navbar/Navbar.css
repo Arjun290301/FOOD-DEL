@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the logo and profile picture */
+    padding: 10px 20px;
+    background-color: #ffffff; /* Optional: background color for clarity */
+}
+
+.logo {
+    width: 150px; /* Set a specific width for the logo */
+    height: auto;  /* Maintain aspect ratio */
+    margin-left: 10px;
+}
+
+.profile {
+    width: 50px;  /* Set a specific width for the profile picture */
+    height: 50px; /* Set height to maintain a square ratio */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px;
+}
+
+.admin-text {
+    margin-left: 10px;
+}

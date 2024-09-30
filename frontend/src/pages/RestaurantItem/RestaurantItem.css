@@ -1,0 +1,80 @@
+/* Container for the restaurant list, ensures 3 cards per row */
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next row */
+    justify-content: space-between; /* Even spacing between cards */
+    gap: 20px; /* Gap between rows */
+    margin-top: 30px;
+  }
+  
+  .restaurant-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: calc(33.33% - 20px); /* Ensures 3 cards per row */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners for the card */
+    background-color: #f9f9f9;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .restaurant-item:hover {
+    background-color: tomato; /* Hover effect with tomato color */
+    transform: scale(1.03); /* Slight scaling on hover */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Adds a soft shadow on hover */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+  }
+  
+  /* Image on the left */
+  .restaurant-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Details on the right */
+  .restaurant-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  /* Text styles for restaurant name */
+  .restaurant-details h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #333; /* Initial text color */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+  
+  /* Text styles for restaurant description */
+  .restaurant-details p {
+    margin: 8px 0;
+    color: #666; /* Slightly lighter color for description */
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover text color change */
+  .restaurant-item:hover .restaurant-details h3,
+  .restaurant-item:hover .restaurant-details p {
+    color: white; /* Text turns white on hover for visibility against tomato background */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 1200px) {
+    .restaurant-item {
+      width: calc(50% - 20px); /* Two cards per row for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .restaurant-item {
+      width: 100%; /* One card per row for mobile devices */
+    }
+  }
+  

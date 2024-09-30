@@ -1,0 +1,42 @@
+.add-restaurant {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 40px;
+}
+
+.add-restaurant form {
+    gap: 20px;
+}
+
+.add-img-upload img {
+    width: 120px;
+}
+
+.add-restaurant-name, .add-restaurant-address {
+    width: max(40%, 280px);
+}
+
+.add-restaurant-name input, .add-restaurant-address textarea {
+    padding: 10px;
+}
+
+.add-category-contact {
+    display: flex;
+    gap: 30px;
+}
+
+.add-category select, .add-contact input {
+    max-width: 150px;
+    padding: 10px;
+}
+
+.add-btn {
+    max-width: 150px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
