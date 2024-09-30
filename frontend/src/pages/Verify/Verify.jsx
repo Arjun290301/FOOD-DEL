@@ -27,7 +27,6 @@ const Verify = () => {
 
         <div className='verify'>
             <div className="spinner">
-                8:43
             </div>
 
         </div>
