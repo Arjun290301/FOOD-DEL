@@ -1,4 +1,4 @@
-import logo from './logo.png'
+import logo from './Logo.png'
 import basket from './basket.jpg'
 import menu_1 from './menu_1.jpg'
 import menu_2 from './menu_2.jpg'
