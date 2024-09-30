@@ -7,7 +7,7 @@ const storeContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState({});
     const [restaurant_list, setRestaurantList] = useState([]);
-    const url = "http://localhost:4000";
+    const url = "https://food-del-backend-lwr7.onrender.com";
     const [token, setToken] = useState("")
     const [food_list, setFoodlist] = useState([])
     const addToCart = async (itemId) => {
