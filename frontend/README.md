@@ -1,8 +1,21 @@
-# React + Vite
+## Frontend - Tummylicious Food Delivery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The frontend of the Tummylicious app is built using React, React Router, and Context API for state management.
 
-Currently, two official plugins are available:
+### Features
+- **Customer View**: Allows users to browse restaurants and food items.
+- **Cart Management**: Add or remove items from the cart.
+- **Order Placement**: Place orders and proceed to payment via Stripe.
+- **Responsive Design**: Optimized for mobile and desktop devices.
+  
+### Libraries and Dependencies:
+- **React Router**: For managing navigation.
+- **Context API**: For handling global state (e.g., cart state).
+- **Axios**: For making API calls to the backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Setup
+1. Navigate to the `frontend` directory:
+   ```bash
+   cd frontend
+2. npm install
+3. npm start
